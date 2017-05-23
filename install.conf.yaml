@@ -1,10 +1,18 @@
 - clean: ['~']
 
 - link:
-    ~/.profile: profile
+    ~/.aliases: aliases
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
+    ~/.hyper.js: hyper.js
     ~/.gitconfig: gitconfig
+    ~/.profile: profile
+    ~/.tmux.conf: tmux.conf
     ~/.zshrc: zshrc
 
-
+- shell:
+  - source ~/.aliases
+  - source ~/.bash_profile
+  - source ~/.bashrc
+  - source ~/.profile
+  - source ~/.zshrc
